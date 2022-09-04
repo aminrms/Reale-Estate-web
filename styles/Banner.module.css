@@ -1,0 +1,29 @@
+.image {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.gridBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem;
+}
+.gridBox:where(h3, h4, p) {
+  text-align: justify;
+}
+.gridBox .rightItem {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 0.5rem 0;
+}
+@media (max-width: 768px) {
+  .gridBox {
+    gap: 1rem 0rem;
+    grid-template-columns: 1fr;
+  }
+  .gridBox .rightItem {
+    width: 100%;
+  }
+}
