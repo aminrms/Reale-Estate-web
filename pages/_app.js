@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "../styles/Index.css";
 import "../styles/PropertyStyle.css";
 import "../styles/Navbar.css";
+import "../styles/FooterStyle.css";
 import Router from "next/router";
 import NProgress from "nprogress";
 import Head from "next/head";
